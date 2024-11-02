@@ -6,7 +6,7 @@ import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+// import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -38,9 +38,22 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
-          <img src={logo} style={{width:'200%', height:'100%'}} alt="brand" />
-        </Navbar.Brand>
+      <Navbar.Brand href="/" className="d-flex">
+  <img 
+    src={logo} 
+    alt="brand" 
+    style={{
+      width: '100%',          
+      maxWidth: '200px',    
+      height: 'auto'        
+    }} 
+    className="img-fluid" 
+  />
+</Navbar.Brand>
+
+        {/* <Navbar.Brand href="/" className="d-flex">
+          <img src={logo} style={{width:'100%', height:'auto'}} alt="brand" />
+        </Navbar.Brand> */}
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
