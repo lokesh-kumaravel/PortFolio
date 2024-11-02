@@ -1,16 +1,30 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import lottie from "lottie-web";
+import jsonData from "../../Assets/Animation.json"; // Adjust the path as needed
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaCode } from "react-icons/fa";
+import { FaLinkedinIn, FaCode } from "react-icons/fa";
 
 function Home2() {
+  const animationContainer = useRef(null);
+
+  useEffect(() => {
+    // Load the animation
+    lottie.loadAnimation({
+      container: animationContainer.current, // Reference to the DOM element
+      renderer: "svg", // Render as SVG
+      loop: true, // Loop the animation
+      autoplay: true, // Autoplay on load
+      animationData: jsonData, // Your animation JSON data
+    });
+
+    return () => lottie.destroy(); // Clean up the animation on unmount
+  }, []);
+
   return (
     <Container fluid className="home-about-section" id="about">
       <Container>
@@ -52,7 +66,10 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <div
+                ref={animationContainer}
+                style={{ width: "auto", height: "auto" }} // Adjust size as needed
+              ></div>
             </Tilt>
           </Col>
         </Row>
@@ -68,7 +85,7 @@ function Home2() {
                   href="https://github.com/lokesh-kumaravel"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <AiFillGithub />
                 </a>
@@ -78,7 +95,7 @@ function Home2() {
                   href="https://leetcode.com/u/lokeshkumaravel29/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaCode />
                 </a>
@@ -88,7 +105,7 @@ function Home2() {
                   href="https://www.linkedin.com/in/lokesh-k-5b7513276/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour home-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
@@ -110,4 +127,5 @@ function Home2() {
     </Container>
   );
 }
+
 export default Home2;
