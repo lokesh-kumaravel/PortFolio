@@ -2,11 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
+  AiFillBook,
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-
+import { FaCode } from "react-icons/fa";
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
@@ -33,12 +34,12 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/lokesh-k-5b7513276/"
+                href="https://leetcode.com/u/lokeshkumaravel29/"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"
               >
-                <AiOutlineTwitter />
+                <FaCode />
               </a>
             </li>
             <li className="social-icons">

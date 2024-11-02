@@ -8,6 +8,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaCode } from "react-icons/fa";
 
 function Home2() {
   return (
@@ -74,12 +75,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/lokesh-k-5b7513276/"
+                  href="https://leetcode.com/u/lokeshkumaravel29/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <AiOutlineTwitter />
+                  <FaCode />
                 </a>
               </li>
               <li className="social-icons">
