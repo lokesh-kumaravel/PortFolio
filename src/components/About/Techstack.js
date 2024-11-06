@@ -6,18 +6,19 @@ import {
   DiReact,
   DiNodejs,
   DiMongodb,
-  // DiPython,
+  DiIntellij,
   DiGit,
-  // DiExtjs,
   DiCode,
   DiJava,
 } from "react-icons/di";
 import {
-  // SiRedis,
+  SiSpring,
+  SiJavascript,
   SiFirebase,
   SiSpringboot,
   SiExpress,
-  // SiNextdotjs,
+  SiHtml5,
+  SiCss3,
   SiMysql,
   SiPostgresql,
 } from "react-icons/si";
@@ -26,14 +27,29 @@ import {
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
+      {/* <Col xs={4} md={2} className="tech-icons">
         <DiCode />
+      </Col> */}
+      <Col xs={4} md={2} className="tech-icons">
+        <SiHtml5 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiCss3 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiJavascript />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJava />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <SiSpring />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiSpringboot />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiExpress />
@@ -43,12 +59,6 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
-      </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col> */}
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiMysql />
@@ -63,14 +73,11 @@ function Techstack() {
         <SiFirebase />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSpringboot />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
       </Col>
-      {/* <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col> */}
+      <Col xs={4} md={2} className="tech-icons">
+        <DiIntellij />
+      </Col>
     </Row>
   );
 }
