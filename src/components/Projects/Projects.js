@@ -8,6 +8,8 @@ import weather from "../../Assets/Projects/weather.png";
 import agroConnect from "../../Assets/Projects/agroConnect.png";
 import portfolio from "../../Assets/Projects/portfolio.png";
 import qrCode from "../../Assets/Projects/qrcode.png";
+import TaskManager from "../../Assets/Projects/TaskManager.png";
+import ECart from "../../Assets/Projects/ECart.png";
 
 function Projects() {
   return (
@@ -50,6 +52,28 @@ function Projects() {
               description="This portfolio showcases a collection of web development projects primarily built with React.js. Each project demonstrates my ability to create dynamic, responsive, and user-friendly interfaces while leveraging modern web technologies. "
               ghLink="https://github.com/lokesh-kumaravel/PortFolio"
               demoLink="https://lokeshportfolio-nine.vercel.app"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={TaskManager}
+              isBlog={false}
+              title="Task Manager"
+              description="A task manager application is designed to help users organize, track, and prioritize tasks, making it easier to manage workloads and boost productivity. The app allows users to create tasks with specific details, including titles, descriptions, deadlines, and priority levels."
+              ghLink="https://github.com/lokesh-kumaravel/TaskManager----MERN"
+              demoLink="https://taskmanager-tau-lemon.vercel.app"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={ECart}
+              isBlog={false}
+              title="ECart"
+              description="This e-commerce project is a web-based platform designed to streamline the buying and selling process, allowing users to browse products, add them to a personalized shopping cart, and complete transactions seamlessly. Built with a robust frontend and backend, the project provides users with an interactive cart system that displays detailed product information and dynamically updates as items are added, removed, or quantities are adjusted."
+              ghLink="https://github.com/lokesh-kumaravel/ECart"
+              // demoLink="https://taskmanager-tau-lemon.vercel.app"
             />
           </Col>
 
