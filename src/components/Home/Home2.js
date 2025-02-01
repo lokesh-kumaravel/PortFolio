@@ -3,10 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import lottie from "lottie-web";
 import jsonData from "../../Assets/Animation.json"; // Adjust the path as needed
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-  AiFillInstagram,
-} from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn, FaCode } from "react-icons/fa";
 
 function Home2() {
@@ -39,7 +36,7 @@ function Home2() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> Java Fullstack, Javascript. </b>
+                <b className="purple"> Java Fullstack, MERN stack. </b>
               </i>
               <br />
               <br />

@@ -9,15 +9,34 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Lokesh K </span>
-            from <span className="purple">  Coimbatore, India.</span>
+            from <span className="purple"> Coimbatore, India.</span>
             <br />
-            I am currently pursuing a Bachelor’s degree in Computer Science Engineering at Sri Shakthi Institute of Engineering and Technology, in my third year.
+            I am currently pursuing a Bachelor’s degree in Computer Science
+            Engineering at Sri Shakthi Institute of Engineering and Technology,
+            in my third year.
             <br />
             {/* I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
             Mesra.
             <br /> */}
-            <br />
-            Apart from coding, some other activities that I love to do!
+            <div>
+              {/* <span className="purple"> */}
+              Web Development Intern @
+              <a
+                href="https://www.seequenze.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Seequenze Technology,
+              </a>
+              <br />
+              {/* </span> */}
+              Noida, Uttar Pradesh,
+              <br />
+              DEC-2024 – Present
+              <br />
+              <br />
+              Apart from coding, some other activities that I love to do!
+            </div>
           </p>
           <ul>
             <li className="about-activity">
@@ -32,7 +51,8 @@ function AboutCard() {
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Code with passion, learn with purpose. Innovate to inspire and create the future!"{" "}
+            "Code with passion, learn with purpose. Innovate to inspire and
+            create the future!"{" "}
           </p>
           <footer className="blockquote-footer">Lokesh K</footer>
         </blockquote>
